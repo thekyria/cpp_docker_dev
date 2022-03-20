@@ -1,0 +1,19 @@
+
+version: "3.9"
+
+services:
+  cpp_dev:
+    image: thekyria/theubuntu:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    network_mode: bridge
+    tty: true
+    stdin_open: true
+    ports:
+      - "49153:22"
+
+# Run with
+#    docker compose up -d
+# Cleanup corresponding images, containers and volumes
+#    docker compose rm -fsv
