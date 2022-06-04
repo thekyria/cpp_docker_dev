@@ -33,7 +33,7 @@ docker compose rm -fsv
 
 ### Alternative: Build
 
-Go directly for the docekr command.
+Go directly for the docker command.
 
 ```bash
 docker build -f Dockerfile -t thekyria/theubuntu:latest .
@@ -41,7 +41,7 @@ docker build -f Dockerfile -t thekyria/theubuntu:latest .
 
 ### Alternative: Run
 
-Go directly for the docekr command, in detached mode.
+Go directly for the docker command, in detached mode.
 
 ```bash
 docker run -itd --rm -p 49153:22 --name theubuntu1 --network="bridge" thekyria/theubuntu:latest
